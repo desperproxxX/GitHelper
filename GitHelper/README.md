@@ -169,5 +169,4 @@ _Для файлов в состояниях staged и modified обычно н�
 ```mermaid
   graph TD;
       untracked-->staged;
-
 ```
