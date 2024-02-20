@@ -167,6 +167,10 @@ _Для файлов в состояниях staged и modified обычно н�
 ## Типичный жизненный цикл файла в Git
 
 ```mermaid
-  graph TD;
-      untracked-->staged;
+graph LR;
+  untracked -- "git add" --> staged;
+  staged    -- "???"     --> tracked/comitted;
+
+%% стрелка без текста для примера: 
+  A --> B;
 ```
