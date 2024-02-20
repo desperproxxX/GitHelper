@@ -167,7 +167,7 @@ _Для файлов в состояниях staged и modified обычно н�
 ## Типичный жизненный цикл файла в Git
 
 ```mermaid
-%% Схема
+
   untracked -- "git add" --> staged;
   modified -- "git add" --> staged;
   staged -- "git commit" --> tracked;
