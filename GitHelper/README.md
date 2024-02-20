@@ -169,10 +169,10 @@ _Для файлов в состояниях staged и modified обычно н�
 ```mermaid
 graph LR;
   untracked -- "git add" --> staged;
-  staged    -- "???"     --> tracked/comitted;
+  modified -- "git add" --> staged;
+  staged -- "git commit" --> tracked;
+  tracked -- "изменения" --> modified;
 
-%% стрелка без текста для примера: 
-  A --> B;
 ```
 
 
